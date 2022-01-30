@@ -1,0 +1,19 @@
+<html>
+    <header>
+        <link rel = "stylesheet", href = "/static/style.css/">
+    </header>
+    <body>
+        <h1>
+            Phong's favorite TV shows are: 
+        </h1>
+    </body>
+    <ol>
+    {%for i in range(0, len)%}
+        {%if favMovies[i] == "Property Brothers"%}
+            <li style="color: green;">{{favMovies[i]}}</li>
+        {%else%}    
+            <li>{{favMovies[i]}}</li>
+        {%endif%}
+    {%endfor%}    
+    </ol>
+</html>
